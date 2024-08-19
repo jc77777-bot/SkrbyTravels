@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Welcome to Malaysia!!!</title>
+
+        <style>
+            .ma-shan-zheng-regular {
+                font-family: "Ma Shan Zheng", cursive;
+                font-weight: 400;
+                font-style: normal;
+              }
+        </style>
+
+        <style>
+            /* Style for the top menu bar */
+            body {
+                margin: 0;
+                font-family: "Inconsolata", monospace;
+                overflow-x: hidden;
+                text-align: center;
+            }
+
+            .top-menu {
+                background-color: #000000;
+                overflow: hidden;
+                position: fixed;
+                width: 100%;
+                height: 12%;
+                top: 0;
+                z-index: 1000;
+                display: flex;
+                justify-content: space-between; 
+                padding: 0 0px;
+                align-items: center; 
+            }
+
+            .top-menu .left-menu {
+                display: flex;
+                align-items: center;
+            }
+
+            .top-menu .left-menu img {
+                height: 70px; 
+                margin-right: 15px;
+                cursor: pointer;
+            }
+
+            .top-menu a {
+                color: rgb(255, 255, 255);
+                text-align: center;
+                padding: 5px 25px;
+                text-decoration: none;
+                font-size: 17px;
+                font-family: "Inconsolata", monospace;
+            }
+
+            .top-menu a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+                color: #333;
+            }
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            .video-section {
+                position: relative;
+                padding-bottom: 56.25%; /* 16:9 aspect ratio */
+                height: 0;
+                overflow: hidden;
+            }
+            .video-section iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            .description {
+                padding: 20px 0;
+                font-size: 1.2em;
+                line-height: 1.6;
+                width: 70%;
+                margin-left: 170px;
+            }
+            .image-section img {
+                width: 70%;
+                height: auto;
+                display: block;
+                margin-bottom: 20px;
+                margin-left: 170px;
+            }
+        </style>
+
+        <style>
+            .button-container {
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 20px;
+            }
+
+            .booking-button, .booking-button1 {
+                display: inline-block;
+                padding: 12px 24px;
+                font-size: 16px;
+                font-weight: bold;
+                color: #fff;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 8px;
+                transition: background-color 0.3s ease;
+                margin-left: 10px;
+            }
+
+            .booking-button {
+                background-color: #ff5a5f;
+            }
+
+            .booking-button:hover {
+                background-color: #e04e4e;
+            }
+
+            .booking-button:active {
+                background-color: #c44545;
+            }
+
+            .booking-button1 {
+                background-color: wheat;
+            }
+
+            .booking-button1:hover {
+                background-color: #e04e4e;
+            }
+
+            .booking-button1:active {
+                background-color: #c44545;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+                line-height: 1.6;
+            }
+
+            .container {
+                max-width: 1200px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .section {
+                display: flex;
+                align-items: center;
+                padding: 40px 20px;
+                margin-bottom: 40px;
+            }
+
+            .section:nth-child(even) {
+                flex-direction: row-reverse;
+            }
+
+            .section img {
+                width: 50%;
+                height: auto;
+                border-radius: 8px;
+            }
+
+            .section-content {
+                max-width: 600px;
+                padding: 0 20px;
+            }
+
+            .section-content h2 {
+                font-size: 28px;
+                margin-bottom: 20px;
+                font-family: "Bungee Tint", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: bold;
+                font-style: normal;
+            }
+
+            .section-content p {
+                font-size: 18px;
+                font-family: "Roboto Slab", serif;
+                font-optical-sizing: auto;
+                font-weight: 1000;
+                font-style: normal;
+            }
+
+            @media (max-width: 768px) {
+                .section {
+                    flex-direction: column;
+                }
+
+                .section img {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+
+                .section-content {
+                    padding: 0;
+                }
+            }
+        </style>
+        
+    </head>
+    <body>
+        <!-- Top menu bar -->
+        <div class="top-menu">
+            <div class="left-menu">
+                <img src="logo.jpg" alt="Logo" onclick="window.location.href='Menu.html'">
+                <img src="mapicon.jpg" alt="Map Icon" onclick="window.location.href='Map.html'">
+            </div>
+            <div class="right-menu">
+                <a href="Menu.html">HOME</a>
+                <a href="TouristAttraction.html">TOURIST ATTRACTION</a>
+                <a href="main.html">FOOD</a>
+                <a href="culture.html">CULTURE</a>
+            </div>
+        </div>
+
+        <br><br><br>
+        <h1 class="ma-shan-zheng-regular">Kuala Lumpur</h1>
+        <hr>
+
+        <div class="container">
+            <!-- Video Section -->
+            <div class="video-section">
+                <iframe src="kuala lumpur.mp4" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="container">
+                <div class="section">
+                    <img src="KLplace.jpg" alt="kuala lumpur">
+                    <div class="section-content">
+                       <p><strong>Kuala Lumpur</strong>  ,officially the Federal Territory of Kuala Lumpur and colloquially referred to as KL, is a federal territory and the capital city of Malaysia. It is the largest city in the country, covering an area of 243 km2 (94 sq mi) with a census population of 2,075,600 as of 2024. Greater Kuala Lumpur, also known as the Klang Valley, is an urban agglomeration of 8.8 million people as of 2024 . It is among the fastest growing metropolitan regions in Southeast Asia, both in population and economic development. Klang Valley (Kuala Lumpur) is ASEAN's fifth largest economy after Singapore, Jakarta, Bangkok, and Manila.</p>
+                    </div>
+                </div>
+        
+
+                <div class="section">
+                    <img src="petronas-tower.jpg" alt="twin towers">
+                    <div class="section-content">
+                        <h2>Petronas Towers</h2>
+                        <p>The Petronas Towers (Malay: Menara Berkembar Petronas), also known as the Petronas Twin Towers and colloquially the KLCC Twin Towers, are an interlinked pair of 88-story supertall skyscrapers in Kuala Lumpur, Malaysia, standing at 451.9 metres (1,483 feet). From 1998 to 2004, they were officially designated as the tallest buildings in the world until they were surpassed by the completion of Taipei 101. The Petronas Towers are the world's tallest twin skyscrapers and remained the tallest buildings in Malaysia until 2019, when they were surpassed by The Exchange 106. The Petronas Towers are a major landmark of Kuala Lumpur, along with the nearby Kuala Lumpur Tower and Merdeka 118, and are visible in many places across the city.
+                        </p>
+                    </div>
+                </div>
+        
+
+                <div class="section">
+                    <img src="duli.jpg" alt="Independence square">
+                    <div class="section-content">
+                        <h2>Independence Square (Kuala Lumpur)</h2>
+                        <p>Independence Square (Malay: Dataran Merdeka) is a square located in Kuala Lumpur, Malaysia. It is situated in front of the Sultan Abdul Samad Building. It was formerly known as the Selangor Club Padang, or simply the Padang (meaning "field" in Malay), and was used as the cricket green of the Selangor Club (now the Royal Selangor Club). It was here that the Union Flag was lowered and the Malaysian flag hoisted for the first time at midnight on 31 August 1957. Since then, the Independence Square has been the usual venue for the annual Independence Day Parade.</p>
+                    </div>
+                </div>
+            
+
+                <div class="section">
+                    <img src="huijiao.jpg" alt="National Mosque of Malaysia">
+                    <div class="section-content">
+                        <h2>National Mosque of Malaysia</h2>
+                        <p>The National Mosque of Malaysia. It has a capacity for 15,000 people and is situated among 13 acres (53,000 m2) of gardens. Its key features are a 73-metre-high (240 ft) minaret and a 16-pointed star concrete main roof. The umbrella, synonymous with the tropics, is featured conspicuously – the main roof is reminiscent of an open umbrella, the minaret's cap a folded one. The folded plates of the concrete main roof are a creative solution to achieving the larger spans required in the main gathering hall. Reflecting pools and fountains are spread throughout the compound. Completed in 1965, the mosque is a bold and modern approach in reinforced concrete, symbolic of the aspirations of a then newly independent nation.</p>
+                    </div>
+                </div>
+
+
+                <div class="section">
+                    <img src="KL-Tower.jpg" alt="KL tower">
+                    <div class="section-content">
+                        <h2>Kuala Lumpur Tower</h2>
+                        <p>The Kuala Lumpur Tower, colloquially referred to as KL Tower, is a 6-storey, 421-metre-tall (1,381 ft) telecommunication tower in Kuala Lumpur, Malaysia. It is the world's seventh-tallest tower. It features an antenna which increases its height to 421 metres (1,381 feet). The roof of the pod is at 335 metres (1,100 feet). The rest of the tower below has a stairwell and an elevator to reach the upper area, which also contains a revolving restaurant, providing diners with a panoramic view of the city.</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <img src="Bukit-Bintang.jpg" alt="bukit bintang">
+                    <div class="section-content">
+                        <h2>Bukit Bintang</h2>
+                        <p>Bukit Bintang; stylised as Bintang Walk or Starhill, the latter being a translation of the Malay name) is the shopping and entertainment district of Kuala Lumpur, Malaysia. It encompasses Jalan Bukit Bintang (Bukit Bintang Road in English) and its immediate surrounding areas. The area has long been Kuala Lumpur's most prominent retail belt that is home to many landmark shopping centres, al-fresco cafés, bars, night markets, food street, mamak stalls as well as hawker-type eateries. This area is popular among tourists and locals, especially among the youths. Like LOT10、Fahrenheit 88、Pavillion、Plaza Low Yat.</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <img src="istana.jpg" alt="istana malaysia">
+                    <div class="section-content">
+                        <h2>National Palace</h2>
+                        <p>National Palace(Istana Negara, Jalan Tuanku Abdul Halim) is the official residence of the Yang di-Pertuan Agong (King of Malaysia). It is located along Jalan Tuanku Abdul Halim (formerly Jalan Duta) near Taman Duta, northwestern Kuala Lumpur. The palace opened in 2011 and replaced the old Istana Negara which was located at a different compound in central Kuala Lumpur.
+                            The palace complex has an area of 97.65 hectares, 22 domes, and is split into three main portions: the Formal Component, Royal Component and Administration Component.</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <img src="zoonegara.jpg" alt="zoo negara">
+                    <div class="section-content">
+                        <h2>National Zoo of Malaysia</h2>
+                        <p>he National Zoo (Malay: Zoo Negara) is a Malaysian zoo located on 110 acres (45 ha) of land in Ulu Klang, Gombak District, Selangor, Malaysia. It was officially opened on November 14, 1963, by the country's first prime minister, Tunku Abdul Rahman.[5] The zoo is managed by a non-governmental organization known as the Malaysian Zoological Society and is home to 5,137 animals of 476 different species.[6] It received MS ISO 9001:2008 certification in July 2007 and is a member of the South East Asian Zoos Association (SEAZA). The president and chairman of the zoo is Y. Bhg. Dato' Ismail Hutson.</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <img src="aqua.jpg" alt="Aquaria KLCC">
+                    <div class="section-content">
+                        <h2>Aquaria KLCC</h2>
+                        <p>Featuring 60,000 square feet (5,600 m2) in two levels with a 90-metre (300 ft) underwater tunnel, Aquaria KLCC houses over 250 different species and over 5,000 land and aquatic animals from Malaysia and around the world. Interactive information kiosks on fish and turtle conservation. It includes a themed retail area of about 5,000 square feet (460 m2). Aquaria KLCC is based on the journey of water from the land to the sea. The journey starts in the misty highlands, down through rivers, through the rainforest and mangroves to the coral reefs into the deep blue sea. There is a large food-court just outside the aquarium with many choices of food</p>
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <a href="https://www.agoda.com/zh-cn/search?city=14524&locale=zh-cn&ckuid=92b6ffca-32c7-4304-9123-049c7ee7f8f5&prid=0&gclid=Cj0KCQjwt4a2BhD6ARIsALgH7DoKCaAY7hE9qkOhOpc93NWxzeL-kBtdVzFKoGjtE-Mouuf2s1i_ksIaAoDBEALw_wcB&currency=MYR&correlationId=b4a23b5e-aeae-4efd-9a43-a5fcd24dccbc&analyticsSessionId=-6984100329954915045&pageTypeId=1&realLanguageId=8&languageId=8&origin=MY&stateCode=10&cid=1922888&tag=7a343420-0458-4c84-88cf-0ac061dbdcee&userId=92b6ffca-32c7-4304-9123-049c7ee7f8f5&whitelabelid=1&loginLvl=0&storefrontId=3&currencyId=4&currencyCode=MYR&htmlLanguage=zh-cn&cultureInfoName=zh-cn&machineName=sg-pc-6g-acm-web-user-f67fdb9b7-flgmn&trafficGroupId=5&sessionId=txrusurf3l4awcj4z4iv3jdj&trafficSubGroupId=122&aid=82361&useFullPageLogin=true&cttp=4&isRealUser=true&mode=production&browserFamily=Chrome&cdnDomain=agoda.net&checkIn=2024-08-21&checkOut=2024-08-22&rooms=1&adults=1&children=0&priceCur=MYR&los=1&textToSearch=%E5%90%89%E9%9A%86%E5%9D%A1&productType=-1&travellerType=0&familyMode=off&ds=UZQC5uET3Vd%2F4sZ4" class="booking-button">Hotel Booking</a>
+                    <a href="userinformation.html" class="booking-button1">User Information</a>
+                </div>
+
+            </div>
+        
+        
+        </div>
+
+    </body>
+</html>

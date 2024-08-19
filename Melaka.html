@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melaka</title>
+    <style>
+        /* General Body Style */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+        }
+
+        /* Top Menu Bar */
+        .top-menu {
+            background-color: #000;
+            position: fixed;
+            width: 100%;
+            height: 12%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .top-menu .left-menu img {
+            height: 70px;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        .top-menu a {
+            color: #fff;
+            padding: 5px 25px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .top-menu a:hover {
+            background-color: #ddd;
+            color: #000;
+        }
+
+        /* Container Style */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Section Styles */
+        .section {
+            display: flex;
+            align-items: center;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+        }
+
+        .section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .section img {
+            width: 50%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .section-content {
+            max-width: 600px;
+            padding: 0 20px;
+        }
+
+        .section-content h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .section-content p {
+            font-size: 18px;
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+            }
+
+            .section img {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Button Styles */
+        .button-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+
+        .booking-button, .booking-button1 {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            margin-left: 10px;
+        }
+
+        .booking-button {
+            background-color: #ff5a5f;
+        }
+
+        .booking-button:hover {
+            background-color: #e04e4e;
+        }
+
+        .booking-button:active {
+            background-color: #c44545;
+        }
+
+        .booking-button1 {
+            background-color: wheat;
+        }
+
+        .booking-button1:hover {
+            background-color: #e04e4e;
+        }
+
+        .booking-button1:active {
+            background-color: #c44545;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top menu bar -->
+    <div class="top-menu">
+        <div class="left-menu">
+            <img src="logo.jpg" alt="Logo" data-href="Menu.html">
+            <img src="mapicon.jpg" alt="Map Icon" data-href="Map.html">
+        </div>
+        <div class="right-menu">
+            <a href="Menu.html">HOME</a>
+            <a href="TouristAttraction.html">TOURIST ATTRACTION</a>
+            <a href="main.html">FOOD</a>
+            <a href="culture.html">CULTURE</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <section>
+            <br><br><br>
+            <h2>Welcome to Melaka</h2>
+            <p>Melaka, also known as Malacca, is a historic city in Malaysia renowned for its rich cultural heritage and historical significance. Explore some of the top attractions below.</p>
+        </section>
+
+        <!-- Melaka River Cruise -->
+        <div class="section melaka-river">
+            <img src="MelakaRiverCruise.jpg" alt="Melaka River Cruise">
+            <div class="section-content">
+                <h2>Melaka River Cruise</h2>
+                <p>Enjoy a relaxing cruise along the Melaka River and take in the picturesque views of the city. The cruise offers a unique perspective of Melaka's historical buildings and vibrant street art.</p>
+            </div>
+        </div>
+
+        <!-- Stadthuys -->
+        <div class="section stadthuys">
+            <img src="stadthuys.jpg" alt="Stadthuys">
+            <div class="section-content">
+                <h2>Stadthuys</h2>
+                <p>The Stadthuys is a historic building located in the heart of Melaka. It was once the residence of the Dutch Governor and his officers. Today, it serves as a museum showcasing Melaka's rich history and culture.</p>
+            </div>
+        </div>
+
+        <!-- Cheng Hoon Teng Temple -->
+        <div class="section cheng-hoon-teng">
+            <img src="ChengTemple.jpg" alt="Cheng Hoon Teng Temple">
+            <div class="section-content">
+                <h2>Cheng Hoon Teng Temple</h2>
+                <p>The Cheng Hoon Teng Temple is one of the oldest Chinese temples in Malaysia. It is known for its beautiful architecture and intricate carvings, serving as an important cultural and spiritual site for the local Chinese community.</p>
+            </div>
+        </div>
+
+        <!-- Jonker Street -->
+        <div class="section jonker-street">
+            <img src="Jonker.jpg" alt="Jonker Street">
+            <div class="section-content">
+                <h2>Jonker Street</h2>
+                <p>Jonker Street is famous for its vibrant night market, where you can find a variety of local delicacies, antiques, and souvenirs. The street is a lively place to experience Melaka's culture and enjoy some shopping and dining.</p>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <a href="https://www.agoda.com/zh-cn/search?guid=04bbd661-d390-4ece-9917-6adce5aab64e&asq=NSqlsmw67ROtbApvamFVU5ufa9Vwpz6XltTHq4n%2B9gNsaarBpGtVANvwwTz%2FazTuQ69dOU1%2FmhnbzgodrvRNHaly4v2Zs%2BSviuynjWEuCc7JAxuHhrx7KnJfgEkIrlDZOAJg8ZBLBq95cauTCD4KjW0t3c82nJ%2Fp%2B0GXkwK5hQ8wKBAewXZv22IXNENKwKWUbPpSNws5JVgIVssFwDNZ4kHb%2BKC2e3zym6tmyvlzCzM%3D&city=15121&tick=638596239742&locale=zh-cn&ckuid=92b6ffca-32c7-4304-9123-049c7ee7f8f5&prid=0&gclid=Cj0KCQjwt4a2BhD6ARIsALgH7DoKCaAY7hE9qkOhOpc93NWxzeL-kBtdVzFKoGjtE-Mouuf2s1i_ksIaAoDBEALw_wcB&currency=MYR&correlationId=e061a7e0-4d12-4cf1-9bca-730877b054b1&analyticsSessionId=-6984100329954915045&pageTypeId=103&realLanguageId=8&languageId=8&origin=MY&stateCode=10&cid=1922888&tag=7a343420-0458-4c84-88cf-0ac061dbdcee&userId=92b6ffca-32c7-4304-9123-049c7ee7f8f5&whitelabelid=1&loginLvl=0&storefrontId=3&currencyId=4&currencyCode=MYR&htmlLanguage=zh-cn&cultureInfoName=zh-cn&machineName=sg-pc-6i-acm-web-user-6f9756964f-rpgfv&trafficGroupId=5&sessionId=txrusurf3l4awcj4z4iv3jdj&trafficSubGroupId=122&aid=82361&useFullPageLogin=true&cttp=4&isRealUser=true&mode=production&browserFamily=Chrome&cdnDomain=agoda.net&checkIn=2024-08-21&checkOut=2024-08-22&rooms=1&adults=1&children=0&priceCur=MYR&los=1&textToSearch=%E9%A9%AC%E5%85%AD%E7%94%B2&productType=-1&travellerType=0&familyMode=off&ds=UZQC5uET3Vd%2F4sZ4" class="booking-button">Hotel Booking</a>
+            <a href="userinformation.html" class="booking-button1">User Information</a>
+        </div>
+    </div>
+
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Handle image clicks in the top menu
+            $('.top-menu .left-menu img').on('click', function() {
+                window.location.href = $(this).data('href');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Welcome to Malaysia!!!</title>
+
+        <style>
+            .ma-shan-zheng-regular {
+                font-family: "Ma Shan Zheng", cursive;
+                font-weight: 400;
+                font-style: normal;
+              }
+        </style>
+
+        <style>
+            .button-container {
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 20px;
+            }
+
+            .booking-button, .booking-button1 {
+                display: inline-block;
+                padding: 12px 24px;
+                font-size: 16px;
+                font-weight: bold;
+                color: #fff;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 8px;
+                transition: background-color 0.3s ease;
+                margin-left: 10px;
+            }
+
+            .booking-button {
+                background-color: #ff5a5f;
+            }
+
+            .booking-button:hover {
+                background-color: #e04e4e;
+            }
+
+            .booking-button:active {
+                background-color: #c44545;
+            }
+
+            .booking-button1 {
+                background-color: wheat;
+            }
+
+            .booking-button1:hover {
+                background-color: #e04e4e;
+            }
+
+            .booking-button1:active {
+                background-color: #c44545;
+            }
+
+            /* Style for the top menu bar */
+            body {
+                margin: 0;
+                font-family: "Inconsolata", monospace;
+                overflow-x: hidden;
+                text-align: center;
+            }
+
+            .top-menu {
+                background-color: #000000;
+                overflow: hidden;
+                position: fixed;
+                width: 100%;
+                height: 12%;
+                top: 0;
+                z-index: 1000;
+                display: flex;
+                justify-content: space-between; 
+                padding: 0 0px;
+                align-items: center; 
+            }
+
+            .top-menu .left-menu {
+                display: flex;
+                align-items: center;
+            }
+
+            .top-menu .left-menu img {
+                height: 70px; 
+                margin-right: 15px;
+                cursor: pointer;
+            }
+
+            .top-menu a {
+                color: rgb(255, 255, 255);
+                text-align: center;
+                padding: 5px 25px;
+                text-decoration: none;
+                font-size: 17px;
+                font-family: "Inconsolata", monospace;
+            }
+
+            .top-menu a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+                color: #333;
+            }
+            .containerv {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            .video-section {
+                position: relative;
+                padding-bottom: 56.25%; /* 16:9 aspect ratio */
+                height: 0;
+                overflow: hidden;
+            }
+            .video-section iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            .description {
+                padding: 20px 0;
+                font-size: 1.2em;
+                line-height: 1.6;
+            }
+            .image-section img {
+                width: 100%;
+                height: auto;
+                display: block;
+                margin-bottom: 20px;
+            }
+        </style>
+
+        
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+                line-height: 1.6;
+            }
+
+            .container {
+                max-width: 1200px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .section {
+                display: flex;
+                align-items: center;
+                padding: 40px 20px;
+                margin-bottom: 40px;
+            }
+
+            .section:nth-child(even) {
+                flex-direction: row-reverse;
+            }
+
+            .section img {
+                width: 50%;
+                height: auto;
+                border-radius: 8px;
+            }
+
+            .section-content {
+                max-width: 600px;
+                padding: 0 20px;
+                font-family: "Roboto Slab", serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            .section-content h2 {
+                font-size: 28px;
+                margin-bottom: 20px;
+                font-family: "Bungee Tint", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: bold;
+                font-style: normal;
+            }
+
+           
+
+            .section-content p {
+                font-size: 18px;
+                font-family: "Roboto Slab", serif;
+                font-optical-sizing: auto;
+                font-weight: 1000;
+                font-style: normal;
+            }
+
+            @media (max-width: 768px) {
+                .section {
+                    flex-direction: column;
+                }
+
+                .section img {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+
+                .section-content {
+                    padding: 0;
+                }
+            }
+        </style>
+
+    </head>
+    <body>
+            <!-- Top menu bar -->
+        <div class="top-menu">
+            <div class="left-menu">
+                <img src="logo.jpg" alt="Logo" onclick="window.location.href='Menu.html'">
+                <img src="mapicon.jpg" alt="Map Icon" onclick="window.location.href='Map.html'">
+            </div>
+            <div class="right-menu">
+                <a href="Menu.html">HOME</a>
+                <a href="TouristAttraction.html">TOURIST ATTRACTION</a>
+                <a href="main.html">FOOD</a>
+                <a href="culture.html">CULTURE</a>
+            </div>
+        </div>
+
+        <br><br><br>
+        <h1 class="ma-shan-zheng-regular">Langkawi</h1>
+        <hr>
+
+        <div class="containerv">
+            <div class="video-section">
+                <iframe src="langkawivideo.mp4" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="container">
+            
+            <div class="container">
+                <div class="section">
+                    <img src="langkawieagle.jpg" alt="langkawi eagle">
+                    <div class="section-content">
+                        <p><strong>Langkawi</strong>, officially known as Langkawi, the Jewel of Kedah (Malay: Langkawi Permata Kedah), is a duty-free island and an archipelago of 99 islands (plus five small islands visible only at low tide in the Strait of Malacca) located some 30 km off the coast of northwestern Malaysia and a few kilometres south of Ko Tarutao, adjacent to the Thai border. Politically, it is an administrative district of Kedah, with Kuah as its largest town. Pantai Cenang is the island's most popular beach and tourist area.</p>
+                    </div>
+                </div>
+        
+                <!-- Genting Theme Park -->
+                <div class="section">
+                    <img src="LangkawiSkyBridge.jpg" alt="sky bridge">
+                    <div class="section-content">
+                        <h2>Langkawi Sky Bridge</h2>
+                        <p>Langkawi Sky Bridge is a 125-metre (410 ft) curved pedestrian cable-stayed bridge in Malaysia, completed in 2005. The bridge deck is 660 metres (2,170 ft) above sea level at the peak of Gunung Mat Cincang on Pulau Langkawi, the main island of the Langkawi archipelago in Kedah.[4] The Langkawi Sky Bridge can be reached by first taking the Langkawi Cable Car to the Top Station, where an inclined lift called SkyGlide takes visitors from the Top Station down to the bridge.
+
+                            The bridge was closed in July 2012 for maintenance and upgrading. The reopening was put off several times, but it partially reopened in February 2015. The bridge is now fully accessible.</p>
+                    </div>
+                </div>
+        
+                <!-- Genting Casino -->
+                <div class="section">
+                    <img src="LangkawiUnderwaterWorld.jpg" alt="under water">
+                    <div class="section-content">
+                        <h2>Underwater World Langkawi</h2>
+                        <p>Underwater World Langkawi (UWL) is one of the largest marine and freshwater aquaria in South East Asia. Since the start of its operation on 26 August 1995, it has become one of the must visit tourist destinations in Langkawi and has attracted a large number of foreign as well as local tourists.The concept and theme of Underwater World Langkawi are geared towards Research & Development, Education and Entertainment. </p>
+                        <p>At Underwater World Langkawi, we have three main sections, which displays Tropical Rainforest & River Ecosystem, Temperate & Sub-Antarctic and Marine Section. Other attractions include the Freshwater Fish Section, the Seashell Display, the Koi Pond, the Reptilium Section, Invertebrate Section, the Coral Reef Section and the Poisonous & Venomous Section.</p>
+                    </div>
+                </div>
+            
+
+                <div class="section">
+                    <img src="langkawifreeduty.jpg" alt="Free duty">
+                    <div class="section-content">
+                        <h2>Langkawi Free Duty Shopping</h2>
+                        <p>Langkawi is known for its tax-free shopping, which is one of the island's main attractions. Being a tax-free zone means that many goods are sold without paying government taxes, making it a shopping paradise for locals and tourists alike. Examples include alcohol, tobacco products, chocolates, sweets, perfumes, cosmetics, kitchenware, electrical appliances, luggage, and more.</p>
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <a href="https://www.agoda.com/zh-cn/search?guid=d21bf6b4-f4a7-4ab8-907d-e27980ce7198&asq=NSqlsmw67ROtbApvamFVU5ufa9Vwpz6XltTHq4n%2B9gNsaarBpGtVANvwwTz%2FazTuTcAvv7NSBV9TzR%2FFOJ9EiozOtPcn%2FkVuszcJtM%2BfUrTJAxuHhrx7KnJfgEkIrlDZOAJg8ZBLBq95cauTCD4KjW0t3c82nJ%2Fp%2B0GXkwK5hQ%2F0GvQjjMkeJG5IJcRI40EyCnaPzadt6HWc0j5XGpgM2UHb%2BKC2e3zym6tmyvlzCzM%3D&city=16928&tick=638596238648&locale=zh-cn&ckuid=92b6ffca-32c7-4304-9123-049c7ee7f8f5&prid=0&gclid=Cj0KCQjwt4a2BhD6ARIsALgH7DoKCaAY7hE9qkOhOpc93NWxzeL-kBtdVzFKoGjtE-Mouuf2s1i_ksIaAoDBEALw_wcB&currency=MYR&correlationId=4c91d9fe-0d61-44da-9a3f-d98d1ee572cd&analyticsSessionId=-6984100329954915045&pageTypeId=103&realLanguageId=8&languageId=8&origin=MY&stateCode=10&cid=1922888&tag=7a343420-0458-4c84-88cf-0ac061dbdcee&userId=92b6ffca-32c7-4304-9123-049c7ee7f8f5&whitelabelid=1&loginLvl=0&storefrontId=3&currencyId=4&currencyCode=MYR&htmlLanguage=zh-cn&cultureInfoName=zh-cn&machineName=sg-pc-6f-acm-web-user-7dd9ddf66c-4m99p&trafficGroupId=5&sessionId=txrusurf3l4awcj4z4iv3jdj&trafficSubGroupId=122&aid=82361&useFullPageLogin=true&cttp=4&isRealUser=true&mode=production&browserFamily=Chrome&cdnDomain=agoda.net&checkIn=2024-08-21&checkOut=2024-08-22&rooms=1&adults=1&children=0&priceCur=MYR&los=1&textToSearch=%E5%85%B0%E5%8D%A1%E5%A8%81&productType=-1&travellerType=0&familyMode=off&ds=UZQC5uET3Vd%2F4sZ4" class="booking-button">Hotel Booking</a>
+                    <a href="userinformation.html" class="booking-button1">User Information</a>
+                </div>
+            </div>
+        
+        
+        </div>
+
+    </body>
+</html>

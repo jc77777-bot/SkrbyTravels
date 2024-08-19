@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Malaysian Cuisine</title>
+    <style>
+        /* Style for the top menu bar */
+        body {
+            margin: 0;
+            font-family: "Inconsolata", monospace;
+            overflow-x: hidden;
+            text-align: center; 
+        }
+
+        .top-menu {
+            background-color: #000000;
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            height: 12%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between; 
+            padding: 0 0px;
+            align-items: center; 
+        }
+
+        .top-menu .left-menu {
+            display: flex;
+            align-items: center;
+        }
+
+        .top-menu .left-menu img {
+            height: 70px;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        .top-menu a {
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 5px 25px;
+            text-decoration: none;
+            font-size: 17px;
+            font-family: "Inconsolata", monospace;
+        }
+
+        .top-menu a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background-color: #165244;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 40px;
+        }
+
+        .food-category {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .category-button {
+            position: relative;
+            width: 250px;
+            height: 250px;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            text-decoration: none;
+            display: block;
+        }
+
+        .category-button img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+
+        .category-button:hover img {
+            transform: scale(1.1);
+        }
+
+        .category-button::before {
+            content: attr(data-text);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            font-size: 24px;
+            border-radius: 0 0 15px 15px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #165244;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top menu bar -->
+    <div class="top-menu">
+        <div class="left-menu">
+            <img src="logo.jpg" alt="Logo" onclick="window.location.href='Menu.html'">
+            <img src="mapicon.jpg" alt="Map Icon" onclick="window.location.href='Map.html'">
+        </div>
+        <div class="right-menu">
+            <a href="Menu.html">HOME</a>
+            <a href="TouristAttraction.html">TOURIST ATTRACTION</a>
+            <a href="main.html">FOOD</a>
+            <a href="culture.html">CULTURE</a>
+        </div>
+    </div>
+
+    <header>
+        <br><br><br>
+        <h1>Malaysia Delicious Food!</h1>
+    </header>
+
+    <div class="container">
+        <div class="food-category">
+            <a href="malay-food.html" class="category-button" data-text="Malay Food">
+                <img src="malay-food.jpg" alt="Malay Food">
+            </a>
+            <p>Malay food is strong, spicy and aromatic, combining the rich tastes of the many herbs and spices commonly found in Southeast Asia. It is one of three major cuisines in Malaysia, and together with Chinese and Indian food, continually delight visitors to the country with its incredible variety and flavors.</p>
+            <a href="indian-food.html" class="category-button" data-text="Indian Food">
+                <img src="indian-food.jpg" alt="Indian Food">
+            </a>
+            <p>Traditional Indian food is renowned worldwide for its wonderful use of herbs and spices, and its diverse range of deep-fried snacks, pastries, curries, gravies, sauces, rice dishes, tandoor-cooked meats, vegetable dishes, chutneys, breads and sweets.</p>
+            <a href="chinese-food.html" class="category-button" data-text="Chinese Food">
+                <img src="chinese-food.jpg" alt="Chinese Food">
+            </a>
+            <p>Savory food, dishes with a keen relish and spicy seasoning, as well as a wide range of various sauces prevail in traditional dishes. However, a favorite ingredient of all Chinese dishes is rice. It is used to cook lots and lots of garnishes for various dishes; it also replaces bread in Chinese cuisine.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p></p>
+    </footer>
+</body>
+
+</html>

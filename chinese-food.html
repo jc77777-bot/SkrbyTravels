@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Food</title>
+    <style>
+        /* Style for the top menu bar */
+        body {
+            margin: 0;
+            font-family: "Inconsolata", monospace;
+            overflow-x: hidden;
+            text-align: center;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .top-menu {
+            background-color: #000000;
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            height: 12%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .top-menu .left-menu {
+            display: flex;
+            align-items: center;
+        }
+
+        .top-menu .left-menu img {
+            height: 70px;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        .top-menu a {
+            color: #fff;
+            padding: 5px 25px;
+            text-decoration: none;
+            font-size: 17px;
+            font-family: "Inconsolata", monospace;
+        }
+
+        .top-menu a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        header {
+            background-color: #9f4a4a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .food-item {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .food-item img {
+            width: 100%;
+            max-width: 300px;
+            object-fit: cover;
+            border-right: 5px solid #9f4a4a;
+        }
+
+        .food-item div {
+            padding: 20px;
+            flex: 1;
+        }
+
+        .food-item a {
+            color: #9f4a4a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .food-item a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #9f4a4a;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            width: 100%;
+            margin-top: 40px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Handle menu image clicks
+            $('.top-menu .left-menu img').on('click', function() {
+                var href = $(this).data('href');
+                if (href) {
+                    window.location.href = href;
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Top menu bar -->
+    <div class="top-menu">
+        <div class="left-menu">
+            <img src="logo.jpg" alt="Logo" data-href="Menu.html">
+            <img src="mapicon.jpg" alt="Map Icon" data-href="Map.html">
+        </div>
+        <div class="right-menu">
+            <a href="Menu.html">HOME</a>
+            <a href="TouristAttraction.html">TOURIST ATTRACTION</a>
+            <a href="main.html">FOOD</a>
+            <a href="culture.html">CULTURE</a>
+        </div>
+    </div>
+
+    <header>
+        <h1>Explore Chinese Dishes</h1>
+    </header>
+
+    <div class="container">
+        <section id="char-kway-teow" class="food-item">
+            <img src="char-kway-teow.jpg" alt="Char Kway Teow">
+            <div>
+                <h2>Char Kway Teow</h2>
+                <p>Char kway teow (炒粿条; chao guo tiao in Mandarin) is a dish of flat rice noodles and tubular yellow wheat noodles fried in garlic, sweet soya sauce and lard, with ingredients such as egg, Chinese waxed sausage, fishcake, beansprouts and cockles. <a href="https://en.wikipedia.org/wiki/Char_kway_teow">Learn more</a>.</p>
+            </div>
+        </section>
+
+        <section id="hainanese-chicken-rice" class="food-item">
+            <img src="hainanese-chicken-rice.jpg" alt="Hainanese Chicken Rice">
+            <div>
+                <h2>Hainanese Chicken Rice</h2>
+                <p>Hainan Chicken Rice is a classic dish beloved by people in Malaysia and all over Asia. Served room temperature, the chicken is incredibly silky. But the rice is really the star—cooked in the broth from poaching the chicken, served with a trio of condiments. <a href="https://en.wikipedia.org/wiki/Hainanese_chicken_rice">Learn more</a>.</p>
+            </div>
+        </section>
+
+        <section id="wonton-noodles" class="food-item">
+            <img src="wonton-noodles.jpg" alt="Wonton Noodles">
+            <div>
+                <h2>Wonton Noodles</h2>
+                <p>Wonton Noodles (also called wanton mee or wanton mein) are one of Malaysian favourite noodles. It is often served in dry or soup. Wonton Mee by SF Noodles are thin, chewy and springy, which have been treated with alkaline salts to give both a distinctive texture and a pronounced yellow colour. <a href="https://en.wikipedia.org/wiki/Wonton_noodles">Learn more</a>.</p>
+            </div>
+        </section>
+
+        <section id="bak-kut-teh" class="food-item">
+            <img src="bak-kut-teh.jpg" alt="Bak Kut Teh">
+            <div>
+                <h2>Bak Kut Teh</h2>
+                <p>The name literally translates from the Hokkien dialect as "meat bone tea", and it usually consists of pork ribs simmered in a broth of herbs and spices (including star anise, cinnamon, cloves, dong quai, fennel seeds and garlic) for hours. However, it can also be made with seafood, chicken and other meat. <a href="https://en.wikipedia.org/wiki/Bak_kut_teh">Learn more</a>.</p>
+            </div>
+        </section>
+
+        <section id="loh-bak" class="food-item">
+            <img src="loh-bak.jpg" alt="Loh Bak">
+            <div>
+                <h2>Loh Bak</h2>
+                <p>Five Spice Pork Roll (Loh Bak) - Malaysian recipe with 5-spice marinated pork wrapped with bean curd skin and deep-fried.Loh bak or five-spice pork roll (卤肉) is one of the festive dishes in my family. Much like many Nyonya or Straits Chinese families in Penang, my family celebrates festivals according to the Chinese lunar calendar. <a href="https://en.wikipedia.org/wiki/Ngo_hiang">Learn more</a>.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p></p>
+    </footer>
+</body>
+
+</html>

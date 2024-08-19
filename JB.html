@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johor Bahru</title>
+    <style>
+            .button-container {
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 20px;
+            }
+
+            .booking-button, .booking-button1 {
+                display: inline-block;
+                padding: 12px 24px;
+                font-size: 16px;
+                font-weight: bold;
+                color: #fff;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 8px;
+                transition: background-color 0.3s ease;
+                margin-left: 10px;
+            }
+
+            .booking-button {
+                background-color: #ff5a5f;
+            }
+
+            .booking-button:hover {
+                background-color: #e04e4e;
+            }
+
+            .booking-button:active {
+                background-color: #c44545;
+            }
+
+            .booking-button1 {
+                background-color: wheat;
+            }
+
+            .booking-button1:hover {
+                background-color: #e04e4e;
+            }
+
+            .booking-button1:active {
+                background-color: #c44545;
+            }
+
+        /* Style for the top menu bar */
+        body {
+            margin: 0;
+            font-family: "Inconsolata", monospace;
+            overflow-x: hidden;
+            text-align: center;
+        }
+
+        .top-menu {
+            background-color: #000000;
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            height: 12%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between; 
+            padding: 0 0px;
+            align-items: center; 
+        }
+
+        .top-menu .left-menu {
+            display: flex;
+            align-items: center;
+        }
+
+        .top-menu .left-menu img {
+            height: 70px; 
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        .top-menu a {
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 5px 25px;
+            text-decoration: none;
+            font-size: 17px;
+            font-family: "Inconsolata", monospace;
+        }
+
+        .top-menu a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .section img, .section video {
+            width: 50%;
+            height: auto;
+            border-radius: 8px;
+            max-width: 600px;
+        }
+
+        /* Specific resizing for images */
+        .section.legoland img,
+        .section.old-chinese-temple img,
+        .section.sultan-abu-bakar img,
+        .section.putuo-temple img {
+            width: 40%; /* Default width for images */
+        }
+
+        .section.putuo-temple img {
+            width: 30%; /* Smaller width specifically for Putuo Temple image */
+        }
+
+        .section-content {
+            max-width: 600px;
+            padding: 0 20px;
+            font-family: "Roboto Slab", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .section-content h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            font-family: "Bungee Tint", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        .section-content p {
+            font-size: 18px;
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .section img, .section video {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+
+            /* Adjustments for smaller images on mobile */
+            .section.legoland img,
+            .section.old-chinese-temple img,
+            .section.sultan-abu-bakar img {
+                width: 60%;
+            }
+
+            .section.putuo-temple img {
+                width: 50%; /* Adjust width on mobile */
+            }
+
+            .section-content {
+                padding: 0;
+            }
+        }
+        /* Specific resizing for images */
+        .section.legoland img,
+        .section.old-chinese-temple img,
+        .section.sultan-abu-bakar img,
+        .section.putuo-temple img {
+            width: 40%; /* Adjust the width for other images */
+        }
+
+        .section.putuo-temple img {
+            width: 30%; /* Set a smaller width specifically for Putuo Temple image */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Top menu bar -->
+    <div class="top-menu">
+        <div class="left-menu">
+            <img src="logo.jpg" alt="Logo" onclick="window.location.href='Menu.html'">
+            <img src="mapicon.jpg" alt="Map Icon" onclick="window.location.href='Map.html'">
+        </div>
+        <div class="right-menu">
+            <a href="Menu.html">HOME</a>
+            <a href="TouristAttraction.html">TOURIST ATTRACTION</a>
+            <a href="main.html">FOOD</a>
+            <a href="culture.html">CULTURE</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <section>
+            <br><br><br>
+            <h2>Welcome to Johor Bahru</h2>
+            <p>Johor Bahru, the capital city of Johor in Malaysia, is known for its vibrant attractions and cultural landmarks. Explore some of the top attractions below.</p>
+        </section>
+
+        <!-- Legoland Malaysia -->
+        <div class="section legoland">
+            <img src="Jb.jpg" alt="Legoland Malaysia">
+            <div class="section-content">
+                <h2>Legoland Malaysia</h2>
+                <p>Legoland Malaysia is a family-friendly theme park with a range of exciting rides and attractions based on the popular LEGO toys. Enjoy a day filled with adventure, creativity, and fun for all ages.</p>
+            </div>
+        </div>
+
+        <!-- Johor Bahru Old Chinese Temple -->
+        <div class="section old-chinese-temple">
+            <img src="oldtemple.jpg" alt="Johor Bahru Old Chinese Temple">
+            <div class="section-content">
+                <h2>Johor Bahru Old Chinese Temple</h2>
+                <p>The Johor Bahru Old Chinese Temple is a historic temple that showcases the rich cultural heritage of the Chinese community in Johor Bahru. Its traditional architecture and historical significance make it a must-visit landmark.</p>
+            </div>
+        </div>
+
+        <!-- Sultan Abu Bakar State Mosque -->
+        <div class="section sultan-abu-bakar">
+            <img src="mosque.jpg" alt="Sultan Abu Bakar State Mosque">
+            <div class="section-content">
+                <h2>Sultan Abu Bakar State Mosque</h2>
+                <p>The Sultan Abu Bakar State Mosque is an architectural marvel known for its impressive design and grandeur. It serves as one of the most important mosques in Johor Bahru and a symbol of the city’s rich Islamic heritage.</p>
+            </div>
+        </div>
+
+        <!-- Putuo Temple -->
+        <div class="section putuo-temple">
+            <img src="Putuo.jpg" alt="Putuo Temple">
+            <div class="section-content">
+                <h2>Putuo Temple</h2>
+                <p>The Putuo Temple in Johor Bahru is a serene and spiritual site that highlights the area's cultural and religious diversity. Its peaceful ambiance and architectural beauty make it a noteworthy destination.</p>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <a href="https://www.agoda.com/search?city=1808&locale=en-us&ckuid=92b6ffca-32c7-4304-9123-049c7ee7f8f5&prid=0&gclid=Cj0KCQjwt4a2BhD6ARIsALgH7DoKCaAY7hE9qkOhOpc93NWxzeL-kBtdVzFKoGjtE-Mouuf2s1i_ksIaAoDBEALw_wcB&currency=MYR&correlationId=f3827f22-b649-4a15-9206-7ecdff27b91b&analyticsSessionId=-6984100329954915045&pageTypeId=103&realLanguageId=1&languageId=1&origin=MY&stateCode=10&cid=1922888&tag=7a343420-0458-4c84-88cf-0ac061dbdcee&userId=92b6ffca-32c7-4304-9123-049c7ee7f8f5&whitelabelid=1&loginLvl=0&storefrontId=3&currencyId=4&currencyCode=MYR&htmlLanguage=en-us&cultureInfoName=en-us&machineName=sg-pc-6h-acm-web-user-5479c7999-grbkx&trafficGroupId=5&sessionId=txrusurf3l4awcj4z4iv3jdj&trafficSubGroupId=122&aid=82361&useFullPageLogin=true&cttp=4&isRealUser=true&mode=production&browserFamily=Chrome&cdnDomain=agoda.net&checkIn=2024-08-21&checkOut=2024-08-22&rooms=1&adults=1&children=0&priceCur=MYR&los=1&textToSearch=Johor+Bahru&productType=-1&travellerType=0&familyMode=off&ds=UZQC5uET3Vd%2F4sZ4" class="booking-button">Hotel Booking</a>
+            <a href="userinformation.html" class="booking-button1">User Information</a>
+        </div>
+    </div>
+
+</body>
+</html>

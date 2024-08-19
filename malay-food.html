@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malay Food</title>
+    <style>
+        /* Style for the top menu bar */
+        body {
+            margin: 0;
+            font-family: "Inconsolata", monospace;
+            overflow-x: hidden;
+            text-align: center;
+        }
+
+        .top-menu {
+            background-color: #000000;
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            height: 12%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 0px;
+            align-items: center;
+        }
+
+        .top-menu .left-menu {
+            display: flex;
+            align-items: center;
+        }
+
+        .top-menu .left-menu img {
+            height: 70px;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        .top-menu a {
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 5px 25px;
+            text-decoration: none;
+            font-size: 17px;
+            font-family: "Inconsolata", monospace;
+        }
+
+        .top-menu a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #396e4e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .food-item {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .food-item img {
+            width: 100%;
+            max-width: 300px;
+            object-fit: cover;
+            border-right: 5px solid #396e4e;
+        }
+
+        .food-item div {
+            padding: 20px;
+            flex: 1;
+        }
+
+        .food-item a {
+            color: #396e4e;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .food-item a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            width: 100%;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top menu bar -->
+    <div class="top-menu">
+        <div class="left-menu">
+            <img src="logo.jpg" alt="Logo">
+            <img src="mapicon.jpg" alt="Map Icon">
+        </div>
+        <div class="right-menu">
+            <a href="Menu.html">HOME</a>
+            <a href="TouristAttraction.html">TOURIST ATTRACTION</a>
+            <a href="main.html">FOOD</a>
+            <a href="culture.html">CULTURE</a>
+        </div>
+    </div>
+
+    <header>
+        <h1>Explore Malay Dishes</h1>
+    </header>
+
+    <div class="container">
+        <section id="nasi-lemak" class="food-item">
+            <img src="nasi-lemak.jpg" alt="Nasi Lemak">
+            <div>
+                <h2>Nasi Lemak</h2>
+                <p>Nasi lemak (Jawi: ناسي لمق) is a dish originating in Malay cuisine that consists of fragrant rice cooked in coconut milk and pandan leaf. It is commonly found in Malaysia, where it is considered the national dish. <a href="https://en.wikipedia.org/wiki/Nasi_lemak">Learn more</a>.</p>
+            </div>
+        </section>
+
+        <section id="satay" class="food-item">
+            <img src="satay.jpg" alt="Satay">
+            <div>
+                <h2>Satay</h2>
+                <p>Satay is a popular street food in Malaysia. A dish of Indonesian and Malaysian origin, consisting of small pieces of seasoned meat, or (in later use) fish, vegetables, etc., grilled on a skewer and served with a sauce. <a href="https://en.wikipedia.org/wiki/Satay">Learn more</a>.</p>
+            </div>
+        </section>
+
+        <section id="rendang" class="food-item">
+            <img src="rendang.jpg" alt="Rendang">
+            <div>
+                <h2>Rendang</h2>
+                <p>Rendang is a meat dish originating from Minangkabau, West Sumatra, Indonesia. The process of cooking rendang at low temperature for a long time, uses coconut milk and various Indonesian spices which are slightly spicy so that it adds to its distinctiveness and delicacy. <a href="https://en.wikipedia.org/wiki/Rendang">Learn more</a>.</p>
+            </div>
+        </section>
+
+        <section id="nasi-kerabu" class="food-item">
+            <img src="nasi-kerabu.jpg" alt="Nasi Kerabu">
+            <div>
+                <h2>Nasi Kerabu</h2>
+                <p>Nasi kerabu (Jawi: نسيء کرابو) is a Malaysian rice dish, a type of nasi ulam, in which blue-colored rice is eaten with dried fish or fried chicken, crackers, pickles, and other salads. <a href="https://en.wikipedia.org/wiki/Nasi_kerabu">Learn more</a>.</p>
+            </div>
+        </section>
+
+        <section id="ikan-bakar" class="food-item">
+            <img src="ikan-bakar.jpg" alt="Ikan Bakar">
+            <div>
+                <h2>Ikan Bakar</h2>
+                <p>Ikan bakar literally means "grilled fish" in Indonesian and Malay. Ikan bakar differs from other grilled fish dishes in that it often contains flavorings like bumbu, kecap manis, sambal, and is covered in a banana leaf and cooked on a charcoal fire. <a href="https://en.wikipedia.org/wiki/Ikan_bakar">Learn more</a>.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Custom script -->
+    <script>
+        $(document).ready(function() {
+            $('.top-menu .left-menu img').eq(0).click(function() {
+                window.location.href = 'Menu.html';
+            });
+            $('.top-menu .left-menu img').eq(1).click(function() {
+                window.location.href = 'Map.html';
+            });
+        });
+    </script>
+</body>
+
+</html>

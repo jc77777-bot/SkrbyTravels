@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <br><br><br><br>
+    <title>Genting Highlands</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        .top-menu {
+            background-color: #000;
+            position: fixed;
+            width: 100%;
+            height: 12%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .top-menu .left-menu img {
+            height: 70px;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        .top-menu a {
+            color: #fff;
+            padding: 5px 25px;
+            text-decoration: none;
+            font-size: 17px;
+            font-family: "Inconsolata", monospace;
+        }
+
+        .top-menu a:hover {
+            background-color: #ddd;
+            color: #000;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+        }
+
+        .section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .section img, .section video {
+            width: 50%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+
+        .booking-button, .booking-button1 {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            margin-left: 10px;
+        }
+
+        .booking-button {
+            background-color: #ff5a5f;
+        }
+
+        .booking-button:hover {
+            background-color: #e04e4e;
+        }
+
+        .booking-button:active {
+            background-color: #c44545;
+        }
+
+        .booking-button1 {
+            background-color: wheat;
+        }
+
+        .booking-button1:hover {
+            background-color: #e04e4e;
+        }
+
+        .booking-button1:active {
+            background-color: #c44545;
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+            }
+
+            .section img, .section video {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top menu bar -->
+    <div class="top-menu">
+        <div class="left-menu">
+            <img src="logo.jpg" alt="Logo" class="logo">
+            <img src="mapicon.jpg" alt="Map Icon" class="map-icon">
+        </div>
+        <div class="right-menu">
+            <a href="Menu.html" class="nav-link">HOME</a>
+            <a href="TouristAttraction.html" class="nav-link">TOURIST ATTRACTION</a>
+            <a href="main.html" class="nav-link">FOOD</a>
+            <a href="culture.html" class="nav-link">CULTURE</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <section>
+            <h2>Welcome to Genting Highlands</h2>
+            <p>Genting Highlands is a popular hill resort destination in Malaysia, offering a wide range of attractions including theme parks, casinos, shopping centers, and breathtaking views. Explore some of the top attractions below.</p>
+        </section>
+
+        <!-- Skyway Cable Car with Image -->
+        <div class="section cable-car">
+            <img src="cablecar.jpg" alt="Skyway Cable Car">
+            <div class="section-content">
+                <h2>Skyway Cable Car</h2>
+                <p>Experience the thrill of soaring above lush landscapes with the Skyway Cable Car. This iconic ride offers breathtaking views as it takes you high up into the mountains, giving you a panoramic view of the entire Genting Highlands region.</p>
+            </div>
+        </div>
+
+        <!-- Genting Theme Park with Video -->
+        <div class="section">
+            <video src="Genting(mp4).mp4" autoplay muted loop></video>
+            <div class="section-content">
+                <h2>Genting Theme Park</h2>
+                <p>The Genting Theme Park is a must-visit for families and thrill-seekers alike. With a range of exhilarating rides, from roller coasters to water rides, and plenty of activities for all ages, it's the perfect spot for a day of fun and excitement.</p>
+            </div>
+        </div>
+
+        <!-- Genting Casino with Image -->
+        <div class="section casino">
+            <img src="casino.jpg" alt="Genting Casino">
+            <div class="section-content">
+                <h2>Genting Casino</h2>
+                <p>As one of Asia's most famous casinos, the Genting Casino offers a world-class gaming experience. Whether you're a seasoned gambler or just looking for some entertainment, the casino provides a luxurious and exciting atmosphere to test your luck.</p>
+            </div>
+        </div>
+
+        <!-- Chin Swee Caves Temple -->
+        <div class="section temple">
+            <img src="temple.jpg" alt="Chin Swee Caves Temple">
+            <div class="section-content">
+                <h2>Chin Swee Caves Temple</h2>
+                <p>Located 4,600 feet above sea level, the temple is about 5–10 minutes' drive down from the peak of the mountain. Within the temple is a statue of Master Qingshui, a Buddhist monk who has long been worshipped as a Deity in Fujian Province, China for his miraculous abilities to summon rain and subdue evil spirits.</p>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <a href="https://www.agoda.com/zh-cn/search?guid=c10c0a2a-9826-49ff-8ef1-01b4f825799b&asq=NSqlsmw67ROtbApvamFVU5ufa9Vwpz6XltTHq4n%2B9gNsaarBpGtVANvwwTz%2FazTucOqo2RxtXpml4S9EnFwvF%2BgC0RNGjWv6E4F20OXcsriNNwW9M50Zi9Cm9SYo8hXbGogZ8GxMBtrQ%2Byk7u3Yae9X%2BLTLQpFDnBugEEhZpLmIkSQRUi5VW%2FQPFk3SatUn3%2Bw5gddKCAQWVpJrT7XmUwVur%2Ftc%2B54Iv4fnCDM4f8d8%3D&city=4684&tick=638596238313&locale=zh-cn&ckuid=92b6ffca-32c7-4304-9123-049c7ee7f8f5&prid=0&gclid=Cj0KCQjwt4a2BhD6ARIsALgH7DoKCaAY7hE9qkOhOpc93NWxzeL-kBtdVzFKoGjtE-Mouuf2s1i_ksIaAoDBEALw_wcB&currency=MYR&correlationId=32997b2e-8f02-4abe-b5f9-03ea8616578d&analyticsSessionId=-6984100329954915045&pageTypeId=103&realLanguageId=8&languageId=8&origin=MY&stateCode=10&cid=1922888&tag=7a343420-0458-4c84-88cf-0ac061dbdcee&userId=92b6ffca-32c7-4304-9123-049c7ee7f8f5&whitelabelid=1&loginLvl=0&storefrontId=3&currencyId=4&currencyCode=MYR&htmlLanguage=zh-cn&cultureInfoName=zh-cn&machineName=sg-pc-6g-acm-web-user-f67fdb9b7-ctp2h&trafficGroupId=5&sessionId=txrusurf3l4awcj4z4iv3jdj&trafficSubGroupId=122&aid=82361&useFullPageLogin=true&cttp=4&isRealUser=true&mode=production&browserFamily=Chrome&cdnDomain=agoda.net&checkIn=2024-08-21&checkOut=2024-08-22&rooms=1&adults=1&children=0&priceCur=MYR&los=1&textToSearch=%E4%BA%91%E9%A1%B6%E9%AB%98%E5%8E%9F&productType=-1&travellerType=0&familyMode=off&ds=UZQC5uET3Vd%2F4sZ4" class="booking-button">Hotel Booking</a>
+            <a href="userinformation.html" class="booking-button1">User Information</a>
+        </div>
+    </div>
+
+    <!-- jQuery Script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.logo').click(function() {
+                window.location.href = 'Menu.html';
+            });
+            
+            $('.map-icon').click(function() {
+                window.location.href = 'Map.html';
+            });
+
+            $('.nav-link').click(function() {
+                window.location.href = $(this).attr('href');
+                return false; // Prevent default link behavior
+            });
+        });
+    </script>
+</body>
+</html>

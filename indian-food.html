@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Food</title>
+    <style>
+        /* General styles */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            overflow-x: hidden;
+            text-align: center;
+        }
+
+        /* Top menu bar styles */
+        .top-menu {
+            background-color: #000000;
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            height: 12%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+        }
+
+        .top-menu .left-menu {
+            display: flex;
+            align-items: center;
+        }
+
+        .top-menu .left-menu img {
+            height: 70px;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        .top-menu .right-menu a {
+            color: #ffffff;
+            text-align: center;
+            padding: 5px 25px;
+            text-decoration: none;
+            font-size: 17px;
+            font-family: 'Inconsolata', monospace;
+        }
+
+        .top-menu .right-menu a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #5c357a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 12%; /* Adjust to avoid overlap with fixed menu */
+        }
+
+        /* Container styles */
+        .container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Food item styles */
+        .food-item {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .food-item img {
+            width: 100%;
+            max-width: 300px;
+            object-fit: cover;
+            border-right: 5px solid #5c357a;
+        }
+
+        .food-item div {
+            padding: 20px;
+            flex: 1;
+        }
+
+        .food-item a {
+            color: #5c357a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .food-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #5c357a;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            width: 100%;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top menu bar -->
+    <div class="top-menu">
+        <div class="left-menu">
+            <img src="logo.jpg" alt="Logo" class="menu-item" data-url="Menu.html">
+            <img src="mapicon.jpg" alt="Map Icon" class="menu-item" data-url="Map.html">
+        </div>
+        <div class="right-menu">
+            <a href="Menu.html">HOME</a>
+            <a href="TouristAttraction.html">TOURIST ATTRACTION</a>
+            <a href="main.html">FOOD</a>
+            <a href="culture.html">CULTURE</a>
+        </div>
+    </div>
+
+    <header>
+        <h1>Explore Indian Dishes</h1>
+    </header>
+
+    <div class="container">
+        <section id="roti-canai" class="food-item">
+            <img src="roti-canai.jpg" alt="Roti Canai">
+            <div>
+                <h2>Roti Canai</h2>
+                <p>Roti canai is a flatbread made from dough that is composed of fat (usually ghee), flour, and water; some recipes also include sweetened condensed milk. The dough is repeatedly kneaded, flattened, oiled, and folded before proofing, creating layers. <a href="https://en.wikipedia.org/wiki/Roti_canai">Learn more</a>.</p>
+            </div>
+        </section>
+
+        <section id="nasi-kandar" class="food-item">
+            <img src="nasi-kandar.jpg" alt="Nasi Kandar">
+            <div>
+                <h2>Nasi Kandar</h2>
+                <p>Nasi kandar is a popular northern Malaysian dish from Penang, originally introduced by Tamil Muslim traders from India. The meal consists of steamed rice combined with an array of distinct curries, sides dishes, and gravies.<a href="https://en.wikipedia.org/wiki/Nasi_kandar">Learn more</a>.</p>
+            </div>
+        </section>
+
+        <section id="murtabak" class="food-item">
+            <img src="murtabak.jpg" alt="Murtabak">
+            <div>
+                <h2>Murtabak</h2>
+                <p>The name mutabbaq in Arabic means "folded". It is a popular street food in Yemen, Indonesia, Malaysia, Thailand and Singapore. Murtabak is often described as spicy folded omelette pancake with bits of vegetables. <a href="https://en.wikipedia.org/wiki/Murtabak">Learn more</a>.</p>
+            </div>
+        </section>
+
+        <section id="biryani" class="food-item">
+            <img src="biryani.jpg" alt="Biryani">
+            <div>
+                <h2>Biryani</h2>
+                <p>Biryani is a delicious rice dish peppered with scrumptious spices like saffron and cumin and further layered with spiced meat or veggie protein. Typically, this layered rice dish is enriched with added yogurt or ghee, a clarified butter, for an extra boost of luxurious flavor. <a href="https://en.wikipedia.org/wiki/Biryani">Learn more</a>.</p>
+            </div>
+        </section>
+
+        <section id="thosai" class="food-item">
+            <img src="thosai.jpg" alt="Thosai">
+            <div>
+                <h2>Thosai</h2>
+                <p>A dosa is a thin, savoury crepe in South Indian cuisine made from a fermented batter of ground black gram and rice. Dosas are served hot, often with chutney and sambar (a lentil-based vegetable stew). Dosas are popular in South Asia as well as around the world. <a href="https://en.wikipedia.org/wiki/Dosa_(food)">Learn more</a>.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p></p>
+    </footer>
+
+    <!-- jQuery script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.menu-item').click(function() {
+                window.location.href = $(this).data('url');
+            });
+        });
+    </script>
+</body>
+
+</html>
